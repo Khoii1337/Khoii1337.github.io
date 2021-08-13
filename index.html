@@ -1,0 +1,101 @@
+<head>
+    <script src="js/jparticles.js"></script>
+    <script src="js/particle.js"></script>
+    <meta property="og:type" content="website" />
+	meta property="og:image" content="https://cdn.discordapp.com/avatars/667718462835261470/ab4da5abff3c04dbe91e7f035c5b8018.png?size=1024"/>
+    <meta name="twitter:description" content="Tifality > you" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/6677184628352">
+    <title>Tifality</title>
+    <style>
+    @font-face {
+        font-family: 'Product Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    }
+    html {
+        color: #ffffff;
+        height: 100%;
+        font-family: "Product Sans";
+        background-image: url("https://i.imgur.com/NrxwYgt.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1E1E1E;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*filter: blur(5px);*/
+        transform: scale(1.1);
+    }
+	
+	a,p {
+		color: white;
+		text-decoration: none;
+        text-shadow: 0px 0px 4px;
+	}
+	
+	a:hover, p:hover {
+		color: white;
+    }
+
+    .rect {
+        border-bottom-style: solid;
+        border-bottom-width: 0;
+    }
+
+    .rect:hover {
+        animation-name: flow;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes flow {
+        0% {
+            border-bottom-width: 0;
+        }
+        100% {
+            border-bottom-width: 3.5px;
+        }
+    }
+
+    .center {
+        background-color: #1E1E1E;
+		position: absolute;
+		text-align: center;
+        margin: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="particles" style="position: fixed; width: 100%; height: 100%;"></div>
+	<div class="center">
+    <span class="rect">
+	<a style="font-size: 65px" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">tifality.club</a>
+    </span>
+	<p style="margin-top: 4px; font-size: 20px">1.9 Utility Mod for Minecraft</p>
+	</div>
+    <script>
+      new JParticles.particle('#particles', {
+      color: ['white', '#1E1E1E'],
+      proximity: 80,
+      range: 150,
+      parallax: true
+      });
+    </script>
+</body>
+<html>
