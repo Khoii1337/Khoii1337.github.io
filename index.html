@@ -2,9 +2,9 @@
     <script src="js/jparticles.js"></script>
     <script src="js/particle.js"></script>
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/865254631075479552/875641096393338880/idk.png"/>
+	meta property="og:image" content="https://cdn.discordapp.com/avatars/667718462835261470/ab4da5abff3c04dbe91e7f035c5b8018.png?size=1024"/>
     <meta name="twitter:description" content="Tifality > you" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/865254631075479552/875641096393338880/idk.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/6677184628352">
     <title>Tifality</title>
     <style>
     @font-face {
@@ -37,35 +37,20 @@
         transform: scale(1.1);
     }
 	
-	a,p {
+	.desc {
 		color: white;
 		text-decoration: none;
-        text-shadow: 0px 0px 5px;
+        text-shadow: 0px 0px 4px;
+		display: block;
 	}
 	
-	a:hover, p:hover {
+	.desc:hover {
 		color: white;
     }
+	
+	button { background-color: #1E1E1E; border: solid; margin-top: 40px; width: 128px; height: 40px; color: white; text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15); border-radius: 0px; text-transform: uppercase; font-weight: 800; letter-spacing: 2px; }
 
-    .rect {
-        border-bottom-style: solid;
-        border-bottom-width: 0;
-    }
-
-    .rect:hover {
-        animation-name: flow;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-    }
-
-    @keyframes flow {
-        0% {
-            border-bottom-width: 0;
-        }
-        100% {
-            border-bottom-width: 3.5px;
-        }
-    }
+	button:hover { background-color: #2b2a27; border: solid; color: white !important; text-decoration: none; }
 
     .center {
         background-color: #1E1E1E;
@@ -77,6 +62,23 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
+	.h {
+		color: white;
+		text-decoration: none;
+	}
+	
+	* {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	}
+	
+	.h:hover {
+        text-shadow: 0px 0px 4px;
+	}
+}
     </style>
 </head>
 
@@ -84,10 +86,14 @@
     <div id="bg"></div>
     <div id="particles" style="position: fixed; width: 100%; height: 100%;"></div>
 	<div class="center">
-	<a style="font-size: 65px" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">tifality.club</a>
-	<p style="margin-top: 4px; font-size: 20px">1.8.9 Utility Mod for Minecraft</p>
+	<span class="h" style="font-size: 65px">tifality.club</span>
+	<span class="desc" style="margin-top: 4px; font-size: 20px">1.8.9 Utility Mod for Minecraft</span>
+	<button onclick="nav()">Download</button>
 	</div>
     <script>
+	function nav() {
+		window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+	}
       new JParticles.particle('#particles', {
       color: ['white', '#1E1E1E'],
       proximity: 80,
